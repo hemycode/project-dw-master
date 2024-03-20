@@ -8,8 +8,6 @@ async function cadastroUsuario(e){
     const formData = Object.fromEntries(new FormData(e.target))
     console.log(formData)
 
-    formData.avatar.type = "png"
-
     let resposta = await fetch(url,{
         method:"POST",
         body:JSON.stringify(
