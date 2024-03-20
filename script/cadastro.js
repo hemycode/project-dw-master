@@ -42,9 +42,9 @@ async function cadastroUsuario(e){
             return;
         };
 
-        if (!response.data.erros) return;
-
-        alert(response.data.errors)
+        if (response.data.errors) {
+            alert(response.data.errors)
+        }
     }
 
     alert("Cadastro feito com sucesso");
