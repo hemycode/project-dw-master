@@ -21,8 +21,8 @@ async function cadastroUsuario(e){
                 "cpf_cnpj": formData.cpf_cnpj,
                 "terms": formData.termos === "sim",
                 "birthday": formData.birthday,
-                "avatar": formData.avatar,
-                "attachment": formData.attachment
+                // "avatar": formData.avatar,
+                // "attachment": formData.attachment
             }
         ),
         headers:{
